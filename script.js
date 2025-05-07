@@ -1,4 +1,5 @@
 function firstChar(str) {
+  str = str.trim(); // Remove leading and trailing spaces
   for (let i = 0; i < str.length; i++) {
     if (str[i] !== ' ') {
       return str[i];
@@ -13,9 +14,7 @@ console.log(firstChar(' Hello World '));  // Output: 'H'
 console.log(firstChar(' '));              // Output: ''
 console.log(firstChar(''));               // Output: ''
 
-
-
 // Do not change the code below
-//Uncomment the following line to show the prompt popup
-//const text = prompt("Enter text:");
+// Uncomment the following line to show the prompt popup
+// const text = prompt("Enter text:");
 alert(firstChar(text));
